@@ -1,0 +1,16 @@
+server:
+  port: 9050
+  servlet.context-path: /account
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:9010/projxai-account-db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+stripe:
+  api:
+    secret: sk_test_51SriqlHNeiWs3Ynccs4nfxsKbb8CAQJN3uenNbKMSvsrRYGOlrBhUlRCiE0fApEmXiJX3r5e8AjSrzdb6gd6l4Gk00IJ48b6Hu
+  webhook:
+    secret: whsec_8caa7687a34d0171ca560ab76c62ed49c695afb1dfba018bdd91c3d9dc93090b
