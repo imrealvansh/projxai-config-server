@@ -1,0 +1,23 @@
+server:
+  port: 9030
+  servlet.context-path: /intelligence
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:9010/projxai-intelligence-db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  ai:
+    model.chat: openai
+    openai:
+      api-key: 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
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: google/gemini-3-flash-preview
+          temperature: 0.2
+      embedding:
+        options:
+          model: qwen/qwen3-embedding-8b
