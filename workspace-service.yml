@@ -18,3 +18,9 @@ minio:
   access-key: minioadmin
   secret-key: minioadmin123
   project-bucket: projects
+
+app:
+  preview:
+    namespace: projxai-previews
+    domain: app.projxai.local
+    proxy-port: 8090
